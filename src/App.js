@@ -11,7 +11,15 @@ function App() {
   return (
     <div>
       
-      <Router>
+      
+      <Todolist/>
+      
+      
+      
+      
+      
+      
+      {/* <Router>
         <Navbar />
         <Switch>
      
@@ -23,7 +31,7 @@ function App() {
         </Route>
         </Switch>
     
-      </Router>
+      </Router> */}
     
     </div>
   )

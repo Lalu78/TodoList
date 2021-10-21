@@ -11,7 +11,7 @@ function Todolist() {
   const onPost = () => {
       if (!input) {
           alert("please fill data");
-      } else if (input && !togglesubmint) {
+      } else if (input && !togglesubmint) { 
           showsetInput(
             showinput.map((ele) => {
                   if (ele.id===isedititem) {
@@ -40,7 +40,7 @@ function Todolist() {
         let newEditItem = showinput.find((elem) => {
             return elem.id === id
         });
-        console.log(newEditItem)
+       
         setTogglesubmit(false)
         setInput(newEditItem.name)
         setIsedititem(id)
@@ -96,14 +96,14 @@ function Todolist() {
                  {ele.name}
               </p>
                  <div>
-                      <i class="fa fa-trash" title="edit-item" onClick={() => {
+                      <i class="fa fa-trash" title=" delete-item" onClick={() => {
                   ondelete(ele.id);
                 }}
                 >
               
               </i>
                   
-              <i className="fa fa-edit " title="delete-item"
+              <i className="fa fa-edit " title="edit-item"
               
                 onClick={() => {
                   onEdite(ele.id);
